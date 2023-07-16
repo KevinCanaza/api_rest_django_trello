@@ -29,7 +29,9 @@ BASE_APPS = [
 ]
 
 LOCAL_APPS = [
+    'apps.setup_initial',
     'apps.users',
+    'apps.boards'
 ]
 
 THIRD_APPS = [
