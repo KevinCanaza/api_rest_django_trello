@@ -16,16 +16,7 @@ ALLOWED_HOSTS = []
 #     }
 # }
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        'HOST': 'localhost',
-        'PORT': 5432,
-        "NAME": "db_trello",
-        'USER': 'postgres',
-        'PASSWORD': 'K123EqweV,./I!@#NQWE',
-    }
-}
+DATABASES = dj_database_url.config() 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
