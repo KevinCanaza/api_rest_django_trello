@@ -8,15 +8,15 @@ class BoardSerializer(serializers.ModelSerializer):
         model = Board
         exclude = ('state','create_at','update_at','deleted_at')
 
-class TaskListSerializer(serializers.ModelSerializer):
+# class TaskListSerializer(serializers.ModelSerializer):
 
-    class Meta:
-        model = TaskList
-        exclude = ('state','create_at','update_at','deleted_at')
+#     class Meta:
+#         model = TaskList
+#         exclude = ('state','create_at','update_at','deleted_at')
 
 
-class TaskSerializer(serializers.ModelSerializer):
+# class TaskSerializer(serializers.ModelSerializer):
 
-    class Meta:
-        model = Task
-        exclude = ('state','create_at','update_at','deleted_at')
+#     class Meta:
+#         model = Task
+#         exclude = ('state','create_at','update_at','deleted_at')

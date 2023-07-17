@@ -55,7 +55,7 @@ class Task(SetupInitialModel):
 
     title = models.CharField('Titulo', max_length=109, unique = True, null= False, blank = False)
     description = models.CharField('Descripcion', max_length=100, unique = True, null= True, blank = True)
-    assigne = models.CharField('Asignado', max_length=100, unique = True, null= True, blank = True)
+    assigne = models.CharField('Asignado', max_length=100, unique = False, null= True, blank = True)
     task_list_id = models.ForeignKey(TaskList, on_delete=models.CASCADE, verbose_name= 'Lista de Tarea')
 
     historical = HistoricalRecords()
